@@ -26,27 +26,27 @@ const formikConfig = {
     setTimeout(() => {
       alert(JSON.stringify(values, null ,2));
       actions.setSubmitting(false);
-    }, 500);
+    }, 2000);
   },
 };
 
 const SignUp = () => (
   <div className="SignUp">
-    <h1>Contact Us</h1>
+    <h1><i className="fa fa-envelope" aria-hidden="true"></i> Contact Us</h1>
     <Formik {...formikConfig}>
       {(props) => (
         <form onSubmit={props.handleSubmit}>
           <div className="FormStyle">
             <div className="LeftInfo">
-              <div class="input-group mb-2">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-default">
+              <div className="input-group mb-2">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="inputGroup-sizing-default">
                     Your Name:
                   </span>
                 </div>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   aria-label="Default"
                   aria-describedby="inputGroup-sizing-default"
                   name="name"
@@ -57,15 +57,15 @@ const SignUp = () => (
               {props.errors.name && props.touched.name && (
                 <div className="error-text">{props.errors.name}</div>
               )}
-              <div class="input-group mb-2">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-default">
+              <div className="input-group mb-2">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="inputGroup-sizing-default">
                     Select:
                   </span>
                 </div>
                 <select
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   aria-label="Default"
                   aria-describedby="inputGroup-sizing-default"
                   name="select"
@@ -84,15 +84,15 @@ const SignUp = () => (
             </div>
 
             <div className="RightInfo">
-              <div class="input-group mb-2">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-default">
+              <div className="input-group mb-2">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" id="inputGroup-sizing-default">
                     Message:
                   </span>
                 </div>
                 <textarea
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   aria-label="Default"
                   aria-describedby="inputGroup-sizing-default"
                   name="message"
@@ -106,7 +106,7 @@ const SignUp = () => (
             </div>
           </div>
           <button type="submit" className="submitBtn" disabled={!props.isValid}>
-            Submit
+          <i className="fa fa-2x fa-arrow-right" aria-hidden="true"></i>
           </button>
         </form>
       )}
