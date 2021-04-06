@@ -33,6 +33,8 @@
   width: 100%;
   background-color: rgba(211, 207, 207, 0.923);
   height: 40px;
+  width: 110px;
+  border-right: 1px solid black;
 }
 .SignUp input {
   background-color: rgba(211, 207, 207, 0.923);

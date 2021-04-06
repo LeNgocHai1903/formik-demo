@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";
-import "./SignUp.css";
+import "./Contact.css";
 
 const formikConfig = {
   initialValues: {
@@ -30,7 +30,7 @@ const formikConfig = {
   },
 };
 
-const SignUp = () => (
+const Contact = () => (
   <div className="SignUp">
     <h1><i className="fa fa-envelope" aria-hidden="true"></i> Contact Us</h1>
     <Formik {...formikConfig}>
@@ -114,4 +114,4 @@ const SignUp = () => (
   </div>
 );
 
-export default SignUp;
+export default Contact;

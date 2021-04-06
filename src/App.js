@@ -1,4 +1,4 @@
-import SignUp from "./pages/SignUp/SignUp";
+import Contact from "./pages/Contact/Contact";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <SignUp />
+        <Contact />
       </main>
       <Footer />
     </div>
