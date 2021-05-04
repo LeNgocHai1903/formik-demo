@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact Component should render component correctly 1`] = `
+<div
+  className="SignUp"
+>
+  <h1>
+    <i
+      aria-hidden="true"
+      className="fa fa-envelope"
+    />
+     Contact Us
+  </h1>
+  <form
+    data-testid="form-contact"
+    onSubmit={[Function]}
+  >
+    <div
+      className="FormStyle"
+    >
+      <div
+        className="LeftInfo"
+      >
+        <div
+          className="input-group mb-2"
+        >
+          <div
+            className="input-group-prepend"
+          >
+            <span
+              className="input-group-text"
+              id="inputGroup-sizing-default"
+            >
+              Your Name:
+            </span>
+          </div>
+          <input
+            aria-describedby="inputGroup-sizing-default"
+            aria-label="Default"
+            className="form-control"
+            data-testid="yourName"
+            id="contactName"
+            name="name"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="input-group mb-2"
+        >
+          <div
+            className="input-group-prepend"
+          >
+            <span
+              className="input-group-text"
+              id="inputGroup-sizing-default"
+            >
+              Select:
+            </span>
+          </div>
+          <select
+            aria-describedby="inputGroup-sizing-default"
+            aria-label="Default"
+            className="form-control"
+            data-testid="select"
+            name="select"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+          >
+            <option
+              value=""
+            >
+              Choose...
+            </option>
+            <option
+              value="Example - 1"
+            >
+              Example - 1
+            </option>
+            <option
+              value="Example - 2"
+            >
+              Example - 2
+            </option>
+            <option
+              value="Example - 3"
+            >
+              Example - 3
+            </option>
+          </select>
+        </div>
+      </div>
+      <div
+        className="RightInfo"
+      >
+        <div
+          className="input-group mb-2"
+        >
+          <div
+            className="input-group-prepend"
+          >
+            <span
+              className="input-group-text"
+              id="inputGroup-sizing-default"
+            >
+              Message:
+            </span>
+          </div>
+          <textarea
+            aria-describedby="inputGroup-sizing-default"
+            aria-label="Default"
+            className="form-control"
+            data-testid="message"
+            name="message"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      className="submitBtn"
+      disabled={false}
+      type="submit"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-2x fa-arrow-right"
+      />
+    </button>
+  </form>
+</div>
+`;

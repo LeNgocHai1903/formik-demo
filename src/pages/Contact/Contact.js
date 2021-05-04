@@ -35,17 +35,19 @@ const Contact = () => (
     <h1><i className="fa fa-envelope" aria-hidden="true"></i> Contact Us</h1>
     <Formik {...formikConfig}>
       {(props) => (
-        <form onSubmit={props.handleSubmit}>
+        <form onSubmit={props.handleSubmit} data-testid="form-contact">
           <div className="FormStyle">
             <div className="LeftInfo">
               <div className="input-group mb-2">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="inputGroup-sizing-default">
+                  <span className="input-group-text" id="inputGroup-sizing-default" >
                     Your Name:
                   </span>
                 </div>
                 <input
                   type="text"
+                  id="contactName"
+                  data-testid="yourName"
                   className="form-control"
                   aria-label="Default"
                   aria-describedby="inputGroup-sizing-default"
@@ -55,16 +57,17 @@ const Contact = () => (
                 />
               </div>
               {props.errors.name && props.touched.name && (
-                <div className="error-text">{props.errors.name}</div>
+                <div id="errorMessage" className="error-text">{props.errors.name}</div>
               )}
               <div className="input-group mb-2">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="inputGroup-sizing-default">
+                  <span className="input-group-text" id="inputGroup-sizing-default" >
                     Select:
                   </span>
                 </div>
                 <select
                   type="text"
+                  data-testid="select"
                   className="form-control"
                   aria-label="Default"
                   aria-describedby="inputGroup-sizing-default"
@@ -86,12 +89,13 @@ const Contact = () => (
             <div className="RightInfo">
               <div className="input-group mb-2">
                 <div className="input-group-prepend">
-                  <span className="input-group-text" id="inputGroup-sizing-default">
+                  <span className="input-group-text" id="inputGroup-sizing-default" >
                     Message:
                   </span>
                 </div>
                 <textarea
                   type="text"
+                  data-testid="message"
                   className="form-control"
                   aria-label="Default"
                   aria-describedby="inputGroup-sizing-default"
